@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #3561a4;
+    --grey: #9ea3ae;
+    --light-color: #f5f6fa;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--light-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  html, body {
+    font-family: "Montserrat", sans-serif !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 { 
+    font-family: "Revalia", sans-serif !important;
+  }
+
+  p, span, button, a, input, textarea { 
+    font-family: "Montserrat", sans-serif !important;
+  }
+

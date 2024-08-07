@@ -15994,8 +15994,8 @@ p{
     border:0;
     background:transparent;
     position:absolute;
-    top:5px;
-    right:5px
+    top:15px;
+    right:15px;
 }
 .btn-close-slideout:hover{
     color:#3266ff

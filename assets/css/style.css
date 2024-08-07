@@ -1,7 +1,11 @@
 :root {
-    --primary-color: #3561a4;
+    --primary-color: #6D87F7;
+    --dark-blue: #002f6b;
+    --light-blue: #8caef8;
+    --transparent-blue: #3561a462;
     --grey: #9ea3ae;
     --light-color: #f5f6fa;
+    --dark-color: #0f0f0f;
 }
 
 ::-webkit-scrollbar {

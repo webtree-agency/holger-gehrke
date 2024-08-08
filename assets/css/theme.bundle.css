@@ -15968,31 +15968,38 @@ p{
 .slideout-nav{
     overflow:hidden
 }
-.slideout-navlink{
-    text-decoration:none;
-    color:#1f2937;
-    font-family:var(--theme-font-serif);
-    font-size:2rem;
-    margin-bottom:.75rem;
-    position:relative
+.slideout-navlink {
+    text-decoration: none;
+    color: #1f2937;
+    font-family: var(--theme-font-serif);
+    font-size: 2rem;
+    margin-bottom: .75rem;
+    position: relative;
 }
-.slideout-navlink:hover{
-    color:#1f2937
+
+.slideout-navlink:hover {
+    color: #1f2937;
 }
-.slideout-navlink:after{
-    content:"";
-    height:4px;
-    width:100%;
-    position:absolute;
-    bottom:-4px;
-    left:0;
-    right:0;
-    background:#3266ff;
-    transition:transform var(--theme-slideout-transition-out) .2s;
-    transform:scaleX(0)
+
+.slideout-navlink:after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    background: #3266ff;
+    transition: transform var(--theme-slideout-transition-out) .2s;
+    transform: scaleX(0);
 }
-.slideout-navlink:hover:after{
-    transform:scaleX(1)
+
+.slideout-navlink:hover:after {
+    transform: scaleX(1);
+}
+
+.slideout-navitem.active .slideout-navlink:after {
+    transform: scaleX(1);
 }
 .btn-close-slideout{
     border:0;

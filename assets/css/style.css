@@ -22,6 +22,10 @@
     cursor: pointer;
   }
 
+  ::selection {
+    background: var(--transparent-blue);
+  }
+
   html, body {
     font-family: "Montserrat", sans-serif !important;
   }
@@ -121,12 +125,6 @@
     width: 100%;
     height: 100vh;
   }
-
-  /* @media (max-width: 991px) {
-    .hero-page-home {
-      background: url(../images/holger-trainer/schalke-mit-ball-daumen-hoch-hero-ipad.png) no-repeat;
-    }
-  } */
 
   .text-revalia {
     font-family: "Revalia", sans-serif !important;

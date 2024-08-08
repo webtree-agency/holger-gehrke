@@ -34,45 +34,35 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
 
-  <!-- Fix for custom scrollbar if JS is disabled-->
   <noscript>
-    <style>
-      /**
-          * Reinstate scrolling for non-JS clients
-          */
       .simplebar-content-wrapper {
         overflow: auto;
       }
     </style>
   </noscript>
 
-  <!-- Page Title -->
   <title>Holger Gehrke</title>
 
 </head>
 <body class="">
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-bottom">
         <div class="container" data-aos="fade-down" data-aos-delay="100" data-aos-duration="400">
           <a class="navbar-brand me-10" href="#">
               <div class="f-w-10">
-                  <h1>Holger Gehrke</h1>
+                  <h1 class="text-dark">Holger Gehrke</h1>
               </div>
           </a>
-          <button class="border-0 bg-transparent btn-open-slideout btn-toggle-slideout">
-            <span class="f-w-10 f-h-1 bg-white d-block mb-2"></span>
-            <span class="f-w-10 f-h-1 bg-white d-block mb-2"></span>
-            <span class="f-w-10 f-h-1 bg-white d-block"></span>
+          <button class="nav-toggle-btn border-0 bg-transparent btn-open-slideout btn-toggle-slideout">
+            <span class="f-w-10 f-h-1 bg-black d-block mb-2"></span>
+            <span class="f-w-10 f-h-1 bg-black d-block mb-2"></span>
+            <span class="f-w-10 f-h-1 bg-black d-block"></span>
           </button>
         </div>
-      </nav>    <!-- / Navbar-->
+      </nav>
 
-    <!-- Main Section-->
     <section class="container ">
-        <!-- Page Content Goes Here -->            
         
-        <!-- Hero-->
         <div class="row my-5 my-lg-10 pb-5 g-5">
             <div class="col-12 col-md-6">
                 <p class="lead tracking-wide" data-aos="fade-left"><span class="display-6 me-2">👋</span> Hello, I’m</p>
@@ -107,7 +97,7 @@
                 </h1>
                 <p class="text-muted lead mb-5" data-aos="fade-left" data-aos-delay="250">Freelance Graphic Designer &<br />
                     Brand Storyteller.</p>
-                <a href="#" class="btn btn-pseudo" data-aos="fade-up" data-aos-delay="600">Download My CV</a>
+                <a href="#" class="btn text-dark btn-pseudo" data-aos="fade-up" data-aos-delay="600">Download My CV</a>
             </div>
             <div class="col-12 col-md-6 position-relative mt-10 mt-md-5 mt-lg-0">
                 <picture class="position-relative z-index-20 d-block" data-aos="fade-left" data-aos-delay="600">
@@ -403,9 +393,6 @@
                         </div>
                         <!-- / Single Skill -->
                 </div>
-            <div class="d-flex justify-content-md-center mt-5 py-1" data-aos="reveal-up">
-                <a href="#" class="btn btn-pseudo">Download My CV</a>
-            </div>
         </div>        <!-- / Experience -->
 
         <!-- Skills -->
@@ -584,34 +571,35 @@
 
     <!-- Footer -->
     <!-- Footer-->
-    <footer class="container mb-10  ">
-        <h6 class="display-4 tracking-wide mb-3" data-aos="slide-up">Möchtest Du mit mir trainieren?</h6>
-        <p class="text-muted lead tracking-wide mb-5" data-aos="reveal-left" data-aos-delay="500">Lass den Ball rollen!</p>
-        <a href="#" class="display-6 font-serif tracking-wide text-decoration-none" data-aos="reveal-right" data-aos-delay="1200">training@holgergehrke.de</a>
-    
-        <ul class="list-unstyled d-flex mt-5 mb-4" data-aos="fade-up">
-            <li class="me-7">
-                <a class="text-body text-decoration-none" href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                    <span class="ml-10">Instagram</span>
-                </a>
-            </li>
-            <li class="me-7">
-                <a class="text-body text-decoration-none" href="#">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <span class="ml-10">LinkedIn</span>
-                </a>
-            </li>
-            <li class="me-7">
-                <a class="text-body text-decoration-none" href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <span class="ml-10">Facebook</span>
-                </a>
-            </li>
-        </ul>
-    
-        <p class="text-muted" data-aos="fade-up">All rights reserved. © Holger Gehrke</p>
-    
+    <footer class="footer-margin bg-dark">
+        <div class="container pb-10 pt-10">
+            <h6 class="display-4 text-light tracking-wide mb-3" data-aos="slide-up">Möchtest Du mit mir trainieren?</h6>
+            <p class="text-muted lead tracking-wide mb-5" data-aos="reveal-left" data-aos-delay="500">Lass den Ball rollen!</p>
+            <a href="mailto:" class="display-6 font-serif tracking-wide text-decoration-none" data-aos="reveal-right" data-aos-delay="1200">training@holgergehrke.de</a>
+        
+            <ul class="list-unstyled d-flex mt-5 mb-4" data-aos="fade-up">
+                <li class="me-7">
+                    <a class="text-body text-decoration-none" href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span class="ml-10">Instagram</span>
+                    </a>
+                </li>
+                <li class="me-7">
+                    <a class="text-body text-decoration-none" href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span class="ml-10">LinkedIn</span>
+                    </a>
+                </li>
+                <li class="me-7">
+                    <a class="text-body text-decoration-none" href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <span class="ml-10">Facebook</span>
+                    </a>
+                </li>
+            </ul>
+        
+            <p class="text-muted" data-aos="fade-up">All rights reserved. © Holger Gehrke</p>   
+        </div>    
     </footer>
     <!-- / Footer-->
     

@@ -65,11 +65,15 @@ body{
     font-size:var(--bs-body-font-size);
     font-weight:var(--bs-body-font-weight);
     line-height:var(--bs-body-line-height);
-    color:var(--bs-body-color);
+    color:var(--bs-dark);
     text-align:var(--bs-body-text-align);
-    background-color:var(--bs-body-bg);
+    background-color:var(--bs-body-color);
     -webkit-text-size-adjust:100%;
     -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+
+.text-dark {
+    color: var(--bs-dark) !important;
 }
 hr{
     margin:1rem 0;
@@ -3926,8 +3930,8 @@ textarea.form-control-lg{
     flex-wrap:wrap;
     align-items:center;
     justify-content:space-between;
-    padding-top:1.5rem;
-    padding-bottom:1.5rem
+    padding-top:1rem;
+    padding-bottom:1rem
 }
 .navbar>.container,.navbar>.container-fluid,.navbar>.container-lg,.navbar>.container-md,.navbar>.container-sm,.navbar>.container-xl,.navbar>.container-xxl{
     display:flex;
@@ -15813,13 +15817,13 @@ p{
     position:relative;
     padding-left:50px;
     padding-right:50px;
-    letter-spacing:1px
+    letter-spacing:1px;
 }
 .btn-pseudo:before{
     content:"";
     position:absolute;
     transition:all .2s ease-in;
-    border:2px solid #fff;
+    border:2px solid #000;
     width:30px;
     height:30px;
     border-radius:50px;
@@ -16141,7 +16145,7 @@ p{
     left:0;
     right:0;
     bottom:0;
-    background:#1a1919
+    background: inherit
 }
 [data-aos=reveal-right].aos-animate:after{
     transform:translateX(100%)

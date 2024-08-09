@@ -110,36 +110,44 @@
         }))
     }()
 }, function(t, e) {
-    ! function() {
+    !function() {
         const t = document.querySelectorAll(".btn-toggle-slideout"),
             e = document.querySelector(".slideout-bg"),
             o = document.querySelectorAll(".slideout-navlink");
-
+    
         function n() {
             document.body.classList.toggle("slideout-active")
         }
+    
         t.forEach(t => {
-            t.addEventListener("click", (function() {
+            t.addEventListener("click", function() {
                 n()
-            }))
-        }), e.addEventListener("click", (function() {
+            })
+        });
+    
+        e.addEventListener("click", function() {
             n()
-        })), o.forEach(t => {
-            t.addEventListener("click", (function(t) {
-                ! function(t) {
+        });
+    
+        o.forEach(t => {
+            t.addEventListener("click", function(t) {
+                const href = t.target.getAttribute("href");
+                if (href && href.startsWith("#")) {
                     t.preventDefault();
-                    const e = !!(t.target && t.target.dataset && t.target.dataset.target) && t.target.dataset.target;
-                    e && (n(), setTimeout(() => {
-                        const t = document.querySelector(e);
-                        t && t.scrollIntoView({
-                            behavior: "smooth",
-                            block: "start"
-                        })
-                    }, 2e3))
-                }(t)
-            }))
-        })
-    }()
+                    const target = document.querySelector(href);
+                    if (target) {
+                        n();
+                        setTimeout(() => {
+                            target.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start"
+                            });
+                        }, 2000);
+                    }
+                }
+            });
+        });
+    }();
 }, function(t, e) {
     window.addEventListener("load", (function() {
         document.body.classList.add("page-loaded")

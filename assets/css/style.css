@@ -184,3 +184,13 @@
   height: 500px;
   position: relative;
 }
+
+@media (max-width: 768px) {
+  .image-container.profi-bild-home {
+    height: 300px;
+  }
+
+  .image-container.trainer-bild-home {
+    height: 300px;
+  }
+}

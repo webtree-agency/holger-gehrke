@@ -126,6 +126,22 @@
     height: 100vh;
   }
 
+  .hero-page-trainer {
+    background: url(../images/holger-trainer/faust-mit-schalke-und-ball.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hero-page-athlete {
+    background: url(../images/holger-profi/holger-hält-ball-am-boden-overlay.png) no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 100vh;
+  }
+
   .text-revalia {
     font-family: "Revalia", sans-serif !important;
     font-weight: 400;

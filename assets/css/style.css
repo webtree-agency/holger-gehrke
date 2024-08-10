@@ -218,3 +218,21 @@
 .text-small {
   font-size: smaller !important;
 }
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* Ändere dies auf die gewünschte Hintergrundfarbe */
+  z-index: 9999; /* Stelle sicher, dass der Preloader über dem restlichen Inhalt liegt */
+}
+
+/* Optional: Hide the preloader after the page has loaded */
+body.loaded #preloader {
+  display: none;
+}

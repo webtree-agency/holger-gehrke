@@ -39,11 +39,11 @@
    </head>
    <body class="">
       <section class="hero-page-athlete">
-         <nav class="navbar navbar-expand-lg navbar-dark bg-light border-bottom">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-light">
             <div class="container" data-aos="fade-down" data-aos-delay="100" data-aos-duration="400">
                <a class="navbar-brand me-10" href="./">
                   <div class="f-w-10">
-                     <h3 class="display-6 text-dark">Holger Gehrke</h3>
+                     <h3 class="display-7 text-dark">Holger Gehrke</h3>
                   </div>
                </a>
                <button class="nav-toggle-btn border-0 bg-transparent btn-open-slideout btn-toggle-slideout">
@@ -422,7 +422,7 @@
          <div class="container pb-10 pt-10">
              <h6 class="display-5 text-light tracking-wide mb-3 wow fadeInUp" data-wow-duration="0.75s">Möchtest Du mit mir trainieren?</h6>
              <p class="text-muted lead tracking-wide mb-5 wow fadeInUp" data-wow-duration="0.75s" data-wow-delay=".5s">Lass den Ball rollen!</p>
-             <a href="mailto:" class="display-6 font-serif tracking-wide text-decoration-none wow fadeInLeft" data-wow-duration="0.75s" data-wow-delay="1s">hallo@holgergehrke.de</a>
+             <a href="mailto:" class="display-7 font-serif tracking-wide text-decoration-none wow fadeInLeft" data-wow-duration="0.75s" data-wow-delay="1s">hallo@holgergehrke.de</a>
              <ul class="list-unstyled d-flex mt-5 mb-4 wow fadeInUp" data-wow-duration="0.75s">
                  <li class="me-7">
                      <a class="text-body text-decoration-none" target="_blank" href="https://www.instagram.com/holger_gehrke1/">
@@ -553,5 +553,21 @@
       <script src="./assets/js/vendor.bundle.js"></script>
             <script src="./assets/js/theme.bundle.js"></script>
       <script src="assets/js/wow.js"></script>
+      <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/dotPulse.js"></script>
+      <script>
+        window.addEventListener('load', function() {
+        setTimeout(function() {
+          document.body.classList.add('loaded');
+        }, 300); 
+      });
+      </script>
+      <div id="preloader">
+        <l-dot-pulse
+           size="50"
+           stroke="4"
+           speed="1"
+           color="var(--primary-color)"
+        ></l-dot-pulse>
+     </div>
    </body>
 </html>

@@ -210,3 +210,7 @@
     height: 300px;
   }
 }
+
+.text-small {
+  font-size: smaller !important;
+}

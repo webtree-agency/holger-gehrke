@@ -209,6 +209,10 @@
   .image-container.trainer-bild-home {
     height: 300px;
   }
+
+  .display-none-phone {
+    display: none !important;
+  }
 }
 
 .text-small {

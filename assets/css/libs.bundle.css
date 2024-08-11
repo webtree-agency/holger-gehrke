@@ -156,7 +156,7 @@
     --swiper-navigation-color:#fff
 }
 .swiper-button-next.swiper-button-black,.swiper-button-prev.swiper-button-black{
-    --swiper-navigation-color:#000
+    --swiper-navigation-color:#1a1919
 }
 .swiper-button-lock{
     display:none
@@ -204,7 +204,7 @@
     height:8px;
     display:inline-block;
     border-radius:50%;
-    background:#000;
+    background:#1a1919;
     opacity:.2
 }
 button.swiper-pagination-bullet{
@@ -288,7 +288,7 @@ button.swiper-pagination-bullet{
     --swiper-pagination-color:#fff
 }
 .swiper-pagination-black{
-    --swiper-pagination-color:#000
+    --swiper-pagination-color:#1a1919
 }
 .swiper-pagination-lock{
     display:none
@@ -366,7 +366,7 @@ button.swiper-pagination-bullet{
     --swiper-preloader-color:#fff
 }
 .swiper-lazy-preloader-black{
-    --swiper-preloader-color:#000
+    --swiper-preloader-color:#1a1919
 }
 @keyframes swiper-preloader-spin{
     to{
@@ -379,7 +379,7 @@ button.swiper-pagination-bullet{
     top:0;
     pointer-events:none;
     opacity:0;
-    z-index:-1000
+    z-index:-11a1919
 }
 .swiper-container-fade.swiper-container-free-mode .swiper-slide{
     transition-timing-function:ease-out
@@ -436,7 +436,7 @@ button.swiper-pagination-bullet{
 }
 .swiper-container-cube .swiper-cube-shadow:before{
     content:"";
-    background:#000;
+    background:#1a1919;
     position:absolute;
     left:0;
     top:0;

@@ -15808,8 +15808,8 @@ body{
     overflow-x:hidden
 }
 .container{
-    padding-left:3rem;
-    padding-right:3rem
+    padding-left:1.5rem;
+    padding-right:1rem
 }
 p{
     font-size:1.2rem

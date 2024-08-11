@@ -228,11 +228,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white; /* Ändere dies auf die gewünschte Hintergrundfarbe */
-  z-index: 9999; /* Stelle sicher, dass der Preloader über dem restlichen Inhalt liegt */
+  background-color: white;
+  z-index: 9999;
 }
 
-/* Optional: Hide the preloader after the page has loaded */
 body.loaded #preloader {
   display: none;
+}
+
+.color-primary-blue {
+  color: var(--primary-color) !important;
 }

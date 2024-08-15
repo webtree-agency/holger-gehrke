@@ -7852,7 +7852,8 @@ textarea.form-control-lg{
     --bs-text-opacity:1
 }
 .text-primary,.text-primary-active:active,.text-primary-focus:focus,.text-primary-hover:hover{
-    color:rgba(var(--bs-primary-rgb),var(--bs-text-opacity))!important
+    color:var(--bs-blue)!important;
+    transition: 0.3s ease-in-out !important;
 }
 .text-secondary{
     --bs-text-opacity:1
@@ -15978,6 +15979,11 @@ p{
 .slideout-nav{
     overflow:hidden
 }
+.animation-hover{
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
 .slideout-navlink {
     text-decoration: none;
     color: #1f2937;
@@ -15991,7 +15997,7 @@ p{
     color: #1f2937;
 }
 
-.slideout-navlink:after {
+.slideout-navlink:after, .animation-hover:after {
     content: "";
     height: 4px;
     width: 100%;
@@ -16004,7 +16010,7 @@ p{
     transform: scaleX(0);
 }
 
-.slideout-navlink:hover:after {
+.slideout-navlink:hover:after, .animation-hover:hover:after {
     transform: scaleX(1);
 }
 

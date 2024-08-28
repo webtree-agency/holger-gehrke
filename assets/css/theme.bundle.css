@@ -15868,7 +15868,7 @@ p{
 .portfolio-item *{
     pointer-events:none
 }
-.portfolio-item:after{
+/* .portfolio-item:after{
     content:"";
     background: pink;
     transition:opacity .3s ease-in;
@@ -15901,7 +15901,7 @@ p{
 .portfolio-item:hover:before{
     opacity:1;
     transform:translateY(0)
-}
+} */
 @media(min-width:992px){
     .portfolio-modal-img{
         height:600px;

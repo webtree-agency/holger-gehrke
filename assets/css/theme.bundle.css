@@ -15935,7 +15935,7 @@ p{
     background-color:rgba(0,0,0,.6);
     background-image: url(../images/holger-profi/holger-im-tor.png);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
     z-index:10
 }
 .slideout,.slideout-bg{
@@ -15975,6 +15975,15 @@ p{
     transform:translateX(50%);
     z-index:20;
     overflow-y:auto
+}
+@media (max-width: 998px) {
+    .slideout-body {
+        width: 100% !important;
+    }
+
+    .slideout-bg, .slideout-img {
+        display: none;
+    }
 }
 .slideout a{
     transition:color var(--theme-slideout-transition-in) .2s
@@ -16141,14 +16150,6 @@ p{
 .slideout-active .slideout-contact:after,.slideout-active .slideout-socials:after{
     transform:translateY(-100%);
     transition:transform var(--theme-slideout-transition-in) .7s .25s
-}
-@media(max-width:767.98px){
-    .slideout-img{
-        width:25%
-    }
-    .slideout-body{
-        width:75%
-    }
 }
 @media(max-width:575.98px){
     .slideout-body{

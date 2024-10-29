@@ -3943,6 +3943,9 @@ textarea.form-control-lg{
     padding-top:0.5rem;
     padding-bottom:0.5rem;
 }
+nav.navbar-linear-bg {
+    background: linear-gradient(to bottom, var(--bs-primary), transparent);
+}
 .navbar>.container,.navbar>.container-fluid,.navbar>.container-lg,.navbar>.container-md,.navbar>.container-sm,.navbar>.container-xl,.navbar>.container-xxl{
     display:flex;
     flex-wrap:inherit;

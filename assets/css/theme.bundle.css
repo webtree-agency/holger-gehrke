@@ -15868,6 +15868,11 @@ p{
     position:relative;
     cursor:pointer
 }
+.portfolio-item img {
+    width: 400px; 
+    height: 400px;
+    object-fit: cover;
+  }
 .portfolio-item *{
     pointer-events:none
 }

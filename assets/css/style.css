@@ -120,12 +120,14 @@
   }
 
   .hero-page-home {
-    background: url(../images/holger-trainer/schalke-mit-ball-daumen-hoch-hero.png) no-repeat;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                url(../images/holger-trainer/schalke-mit-ball-daumen-hoch-hero.png) no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
-  }
+  }  
 
   .hero-page-trainer {
     background: url(../images/holger-trainer/faust-mit-schalke-und-ball.png) no-repeat;

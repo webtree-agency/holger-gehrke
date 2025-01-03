@@ -102,6 +102,9 @@
   .fs-10 {
     font-size: 10px !important;
   }
+  .fs-24 {
+    font-size: 24px !important;
+  }
 
   .fs-20 {
     font-size: 20px !important;
@@ -241,4 +244,7 @@ body.loaded #preloader {
 
 .color-primary-blue {
   color: var(--primary-color) !important;
+}
+.color-black {
+  color: var(--dark-color) !important;
 }

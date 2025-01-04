@@ -250,16 +250,25 @@ body.loaded #preloader {
   color: var(--dark-color) !important;
 }
 
+.custom-img {
+  width: 100%; 
+  height: 350px !important;
+  object-fit: cover;
+}
+.custom-img-top {
+  object-position: top !important;
+}
+.custom-img-center {
+  object-position: center !important;
+}
+
 @media (min-width: 768px) {
-  .custom-img {
-    width: 100%; 
-    height: 350px !important;
-    object-fit: cover;
+  .img-carousel-phone {
+    display: none !important;
   }
-  .custom-img-top {
-    object-position: top !important;
-  }
-  .custom-img-center {
-    object-position: center !important;
+}
+@media (max-width: 768px) {
+  .img-gallery-laptop {
+    display: none !important;
   }
 }

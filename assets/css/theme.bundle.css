@@ -15938,7 +15938,7 @@ p{
 .slideout-bg{
     left:0;
     background-color:rgba(0,0,0,.6);
-    background-image: url(../images/holger-profi/holger-im-tor.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/holger-profi/holger-schalke-nummer-1.webp);
     background-repeat: no-repeat;
     background-size:cover;
     z-index:10

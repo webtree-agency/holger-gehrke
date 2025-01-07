@@ -141,6 +141,15 @@
     height: 100vh;
   }
 
+  .hero-page-off-the-pitch {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                url(../images/fun/holger-mit-roberto-carlos.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+
   .hero-page-athlete {
     background: url(../images/holger-profi/holger-hält-ball-am-boden-overlay.png) no-repeat;
     background-size: cover;

@@ -52,7 +52,13 @@
    </head>
    <body class="">
       <section class="hero-page-trainer">
-         <video class="background-video" src="assets/videos/goalkeeper-training-highlights-in-action.mp4" autoplay muted loop></video>
+         <video class="background-video" src="assets/videos/goalkeeper-training-highlights-in-action.mp4"          autoplay
+         loop
+         muted
+         playsinline
+         preload="metadata"
+         aria-hidden="true"
+         ></video>
          <nav class="navbar navbar-expand-lg navbar-linear-bg">
             <div class="container">
                <a class="navbar-brand me-10" href="./">
@@ -602,6 +608,16 @@
           document.body.classList.add('loaded');
         }, 300); 
       });
+
+      // Play video on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function () {
+        const video = document.querySelector('video');
+        if (video) {
+            video.play().catch(error => {
+                console.log("Autoplay failed due to: ", error);
+            });
+        }
+    });
       </script>
       <div id="preloader">
         <l-dot-pulse

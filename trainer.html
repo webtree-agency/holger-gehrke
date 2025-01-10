@@ -52,13 +52,6 @@
    </head>
    <body class="">
       <section class="hero-page-trainer">
-         <video class="background-video" src="assets/videos/goalkeeper-training-highlights-in-action.mp4"          autoplay
-         loop
-         muted
-         playsinline
-         preload="metadata"
-         aria-hidden="true"
-         ></video>
          <nav class="navbar navbar-expand-lg navbar-linear-bg">
             <div class="container">
                <a class="navbar-brand me-10" href="./">
@@ -94,7 +87,7 @@
                <p class="opacity-90">Heute leite ich auf Mallorca das Torwarttraining im „Fussicamp Mallorca“ und organisiere in Deutschland die „Keeperdays“, exklusive Trainingscamps für junge Torwarttalente. Außerdem unterstütze ich als Spielerberater und Begleiter junge Talente dabei, sich weiterzuentwickeln und gegebenenfalls an Vereine weiterzuvermitteln.</p>
            </div>                     
          </div>
-         <div class="pt-6 pb-8 portfolio">
+         <div class="pt-6 pb-6 portfolio">
             <div class="mb-3 wow fadeInDown" data-wow-duration="0.75s" data-wow-delay="0.5s">
                <span class="color-primary-blue">Torwart-Coach</span>
                <h3 class="display-6 lh-1">Ein Einblick in meine Trainerkarriere</h3>
@@ -203,9 +196,31 @@
                  <i class="fas fa-chevron-right"></i>
                  <span class="visually-hidden">Nächstes</span>
                </button>
-             </div>             
+             </div>
+             <a href="#" class="mt-4 btn text-dark btn-pseudo-dark" data-bs-toggle="modal" data-bs-target="#highlightVideoModal">Training Highlights</a>
+
+             <div class="modal fade" id="highlightVideoModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                   <div class="modal-content custom-modal">
+                      <button type="button" class="btn-close-icon" data-bs-dismiss="modal" aria-label="Close">
+                         <i class="fa-solid fa-xmark"></i>
+                      </button>
+                      <div class="modal-body p-0">
+                         <div class="video-wrapper">
+                            <video controls class="rounded">
+                               <source src="assets/videos/goalkeeper-training-highlights-in-action.mp4" type="video/mp4">
+                            </video>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             
          </div>
-         <div class="pb-8 portfolio">
+         <div class="progress f-h-1 mb-6">
+            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+         <div class="pb-6 portfolio">
             <div class="mb-3 wow fadeInDown" data-wow-duration="0.75s" data-wow-delay="0.5s">
                <span class="color-primary-blue">Spielerberater / Begleiter</span>
                <h3 class="display-6 lh-1">Spieler erfolgreich an Top-Vereine vermittelt</h3>
@@ -608,16 +623,23 @@
           document.body.classList.add('loaded');
         }, 300); 
       });
-
-      // Play video on DOMContentLoaded
-    document.addEventListener('DOMContentLoaded', function () {
-        const video = document.querySelector('video');
-        if (video) {
-            video.play().catch(error => {
-                console.log("Autoplay failed due to: ", error);
-            });
-        }
-    });
+      </script>
+      <script>
+         const modal = document.getElementById('highlightVideoModal');
+         modal.addEventListener('shown.bs.modal', function () {
+            const video = modal.querySelector('video');
+            if (video) {
+               video.play(); // Video automatisch abspielen
+            }
+         });
+      
+         modal.addEventListener('hidden.bs.modal', function () {
+            const video = modal.querySelector('video');
+            if (video) {
+               video.pause(); // Video stoppen
+               video.currentTime = 0; // Zurücksetzen
+            }
+         });
       </script>
       <div id="preloader">
         <l-dot-pulse

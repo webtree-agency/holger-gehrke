@@ -15827,32 +15827,70 @@ p{
 .font-serif,.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{
     font-family:var(--theme-font-serif)
 }
-.btn-pseudo{
-    position:relative;
-    padding-left:50px;
-    padding-right:50px;
-    letter-spacing:1px;
+/* Standard Button */
+.btn-pseudo {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    letter-spacing: 1px;
+    color: #fff; /* Standardfarbe */
 }
-.btn-pseudo:before{
-    content:"";
-    position:absolute;
-    transition:all .2s ease-in;
-    border:2px solid #fff;
-    width:30px;
-    height:30px;
-    border-radius:50px;
-    left:0;
-    top:6px
+
+.btn-pseudo:before {
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease-in;
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    left: 0;
+    top: 6px;
 }
-.btn-pseudo:hover{
-    color:var(--bs-blue)
+
+.btn-pseudo:hover {
+    color: var(--bs-blue);
 }
-.btn-pseudo:hover:before{
-    width:100%;
-    height:52px;
-    top:-5px;
-    border-color:var(--bs-blue)
+
+.btn-pseudo:hover:before {
+    width: 100%;
+    height: 52px;
+    top: -5px;
+    border-color: var(--bs-blue);
 }
+
+/* Dunkler Button */
+.btn-pseudo-dark {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    letter-spacing: 1px;
+    color: #000; /* Dunkle Farbe für Text */
+}
+
+.btn-pseudo-dark:before {
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease-in;
+    border: 2px solid #000; /* Dunkler Rahmen */
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    left: 0;
+    top: 6px;
+}
+
+.btn-pseudo-dark:hover {
+    color: #fff; /* Helle Farbe bei Hover */
+}
+
+.btn-pseudo-dark:hover:before {
+    width: 100%;
+    height: 52px;
+    top: -5px;
+    border-color: var(--bs-blue);
+}
+
 .portfolio-listing{
     -moz-column-count:3;
     column-count:3;

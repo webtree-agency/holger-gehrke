@@ -3041,8 +3041,8 @@ textarea.form-control-lg{
     opacity:.65
 }
 .btn-primary{
-    color:#fff;
-    background-color:var(--bs-blue);
+    color:var(--bs-blue);
+    background-color:transparent;
     border-color:var(--bs-blue)
 }
 .btn-check:focus+.btn-primary,.btn-primary:focus,.btn-primary:hover{

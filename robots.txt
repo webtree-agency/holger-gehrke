@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.holgergehrke.de/sitemap.xml
+Sitemap: https://holgergehrke.de/sitemap.xml
